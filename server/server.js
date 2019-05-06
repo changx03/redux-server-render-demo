@@ -4,8 +4,8 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import App from './containers/App'
-import reducer from './reducers'
+import App from '../app/src/app'
+import reducer from '../app/src/reducers'
 
 const app = Express()
 const port = 3000
@@ -63,5 +63,5 @@ function renderFullPage(html, preloadedState) {
 }
 
 app.listen(port, () => {
-  console.log(`listening http://localhost:${port}`)
+  console.log(`listening on http://localhost:${port}`)
 })
