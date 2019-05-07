@@ -23,3 +23,4 @@ Redux's **only** job on the server side is to provide the **initial state** of o
 
 - `npx webpack` - build `bundle.js` file and save it into `/static/` folder
 - `node ./server/index.js` - then run node.js server as usual
+- using `npm-run-all --parallel` to run `nodemon` and `webpack --watch` in same time
